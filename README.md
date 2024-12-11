@@ -18,7 +18,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/a-simple-blog-preview-card-made-with-html-and-css-0bMJ3tNNvw](https://www.frontendmentor.io/solutions/a-simple-blog-preview-card-made-with-html-and-css-0bMJ3tNNvw)
 - Live Site URL: [https://silly-nasturtium-57dcbc.netlify.app](https://silly-nasturtium-57dcbc.netlify.app)
 
 ## My process
