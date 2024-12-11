@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Figtree", sans-serif;
+    font-size: 1em;
+    height: 100dvh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: var(--Slate-300);
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+}
+
+
+/* STYLE GUIDE */
+:root {
+
+    /* Slate Colors */
+    --Yellow: #F4D04E;
+    --Gray-950: #111111;
+    --Gray-500: #6B6B6B;
+    --White: #FFFFFF;
+
+
+    /* Typography */
+
+    /* figtree Bold - Preset 1 */
+    --figtree-extra-bold-font-weight: bold;
+    --figtree-extra-bold-font-size: 1.5rem;
+    --figtree-extra-bold-line-height: 150%;
+    --figtree-extra-bold-letter-spacing: 0px;
+    
+    /* figtree medium - Preset 2 */
+    --figtree-medium-font-size: 1rem;
+    --figtree-medium-line-height: 150%;
+    --figtree-medium-letter-spacing: 0px;
+
+    /* figtree medium - Preset 3 */
+    --figtree-medium-font-size: 0.875rem;
+    --figtree-medium-line-height: 150%;
+    --figtree-medium-letter-spacing: 0px;
+
+    /* figtree extra bold - Preset 3 (bold) */
+    --figtree-medium-font-size: 0.875rem;
+    --figtree-medium-line-height: 150%;
+    --figtree-medium-letter-spacing: 0px;
+
+    /* Spacing */
+    --large-spacing: 1.5rem;
+    --medium-spacing: 0.75rem;
+    --small-spacing: 0.5rem;
+    --xtra-small-spacing: 0.25rem;
+}
+
+/* Main Styling */
+
+div > img {
+    height: 18rem;
+    width: 18rem;
+    margin: 1rem 1rem 1.5rem 1rem;
+    border-radius: 10px;
+}
+
+.container {
+    height: 31.1875rem;
+    width: 20rem;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 20px;
+}
+
+body > main > div > div > h1 {
+    color: var(--Slate-900);
+    margin: 0 0 1rem 0;
+    padding: 0 1rem;
+    font-weight: var(--outfit-bold-font-weight);
+    font-size: var(--outfit-bold-font-size);
+    line-height: var(--outfit-bold-line-height);
+    letter-spacing: var(--outfit-bold-letter-spacing);
+}
+
+body > main > div > div > p {
+    color: var(--Slate-500);
+    margin: 0;
+    padding: 0 1rem;
+    font-size: var(--outfit-regular-font-size);
+    line-height: var(--outfit-regular-line-height);
+    letter-spacing: var(--outfit-regular-letter-spacing);
+}
+
+.text-container {
+    margin: 0 1rem;
+    height: 8.1875rem;
+    width: 18rem;
+}
