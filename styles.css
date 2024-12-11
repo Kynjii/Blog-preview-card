@@ -110,6 +110,12 @@ main {
     letter-spacing: var(--figtree-letter-spacing); 
 }
 
+.card-title > h1:hover,
+.card-title > h1:focus {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
 .card-desc > p {
     margin: 0;
     color: var(--Gray-500);
