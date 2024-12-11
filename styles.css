@@ -15,9 +15,8 @@ body {
     margin: 0;
     height: 100%;
     width: 100vw;
-    background-color: var(--Slate-300);
-    font-family: "Outfit", sans-serif;
-    text-align: center;
+    background-color: var(--Yellow);
+    text-align: left;
 }
 
 
@@ -33,26 +32,9 @@ body {
 
     /* Typography */
 
-    /* figtree Bold - Preset 1 */
-    --figtree-extra-bold-font-weight: bold;
-    --figtree-extra-bold-font-size: 1.5rem;
-    --figtree-extra-bold-line-height: 150%;
-    --figtree-extra-bold-letter-spacing: 0px;
-    
-    /* figtree medium - Preset 2 */
-    --figtree-medium-font-size: 1rem;
-    --figtree-medium-line-height: 150%;
-    --figtree-medium-letter-spacing: 0px;
-
-    /* figtree medium - Preset 3 */
-    --figtree-medium-font-size: 0.875rem;
-    --figtree-medium-line-height: 150%;
-    --figtree-medium-letter-spacing: 0px;
-
-    /* figtree extra bold - Preset 3 (bold) */
-    --figtree-medium-font-size: 0.875rem;
-    --figtree-medium-line-height: 150%;
-    --figtree-medium-letter-spacing: 0px;
+    /* Figtree */
+    --figtree-line-height: 150%;
+    --figtree-letter-spacing: 0px;
 
     /* Spacing */
     --large-spacing: 1.5rem;
@@ -63,14 +45,8 @@ body {
 
 /* Main Styling */
 
-div > img {
-    height: 18rem;
-    width: 18rem;
-    margin: 1rem 1rem 1.5rem 1rem;
-    border-radius: 10px;
-}
-
-.container {
+.card-container {
+    background-color: var(--White);
     height: 31.1875rem;
     width: 20rem;
     margin: 0 auto;
@@ -78,27 +54,100 @@ div > img {
     border-radius: 20px;
 }
 
-body > main > div > div > h1 {
-    color: var(--Slate-900);
-    margin: 0 0 1rem 0;
-    padding: 0 1rem;
-    font-weight: var(--outfit-bold-font-weight);
-    font-size: var(--outfit-bold-font-size);
-    line-height: var(--outfit-bold-line-height);
-    letter-spacing: var(--outfit-bold-letter-spacing);
+.card-img-container {
+    height: 12.5rem;
+    width: 17.4375rem;
+    margin: var(--large-spacing);
+    border-radius: 10px;
 }
 
-body > main > div > div > p {
-    color: var(--Slate-500);
+.card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-details {
+    margin-left: 1.5rem;
+}
+
+.card-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5625rem;
+    height: 1.625rem;
+    background-color: var(--Yellow);
+    border-radius: 4px;
+    color: var(--Gray-950);
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: var(--figtree-line-height);
+    letter-spacing: var(--figtree-letter-spacing);
+}
+
+.publish-date {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: var(--figtree-line-height);
+    letter-spacing: var(--figtree-letter-spacing);
+}
+
+.card-title > h1 {
+    color: var(--Gray-950);
     margin: 0;
-    padding: 0 1rem;
-    font-size: var(--outfit-regular-font-size);
-    line-height: var(--outfit-regular-line-height);
-    letter-spacing: var(--outfit-regular-letter-spacing);
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: var(--figtree-line-height);
+    letter-spacing: var(--figtree-letter-spacing); 
 }
 
-.text-container {
-    margin: 0 1rem;
-    height: 8.1875rem;
-    width: 18rem;
+.card-desc > p {
+    margin: 0;
+    color: var(--Gray-500);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: var(--figtree-line-height);
+    letter-spacing: var(--figtree-letter-spacing);
+}
+
+.publish-date,
+.card-title,
+.card-desc {
+    padding-top: var(--medium-spacing);
+}
+
+.card-footer > img {
+    height: 2rem;
+}
+
+.card-footer {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 0.75rem; 
+    width: 8.0625rem;
+    height: 2rem;
+    color: var(--Gray-950);
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: var(--figtree-line-height);
+    letter-spacing: var(--figtree-letter-spacing);
+}
+
+/* ============
+    Media Queries
+    =========== */
+
+@media (min-width: 375px) {
+    .card-container {
+        max-height: 32.625rem;
+        width: 24rem;
+    }
+
+    .card-img-container {
+        max-width: 21rem;
+    }
 }
