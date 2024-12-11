@@ -3,15 +3,15 @@
 }
 
 html {
-    font-family: "Figtree", sans-serif;
-    font-size: 1em;
     height: 100dvh;
-    background-color: var(--Yellow);
 }
 
 body {
     margin: 0;
     height: 100%;
+    font-family: "Figtree", sans-serif;
+    font-size: 1em;
+    background-color: var(--Yellow);
 }
 
 /* STYLE GUIDE */
@@ -39,23 +39,27 @@ body {
 
 /* Main Styling */
 
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-container {
-    position: relative;
-    top: 15dvh;
     display: flex;
     flex-direction: column;
     background-color: var(--White);
-    min-height: 31.1875rem;
-    min-width: 20rem;
-    margin: 0 auto;
+    max-height: 31.3125rem;
+    max-width: 20.4375rem;
     background-color: var(--White);
     border-radius: 20px;
     box-shadow: 9px 9px 1px var(--Gray-950);
 }
 
 .card-img-container {
-    min-height: 12.5rem;
-    min-width: 17.4375rem;
+    max-height: 12.5rem;
+    max-width: 17.4375rem;
     margin: var(--large-spacing);
     border-radius: 10px;
 }
@@ -141,18 +145,10 @@ body {
     Media Queries
     =========== */
 
-@media (min-width: 375px) {
-    .img-tag {
-        max-height: 1.3125rem;
-        max-width: 3.625rem;
-    }
-
+@media (min-width: 376px) {
     .card-container {
-        max-height: 32.625rem;
-        max-width: 24rem;
+        width: 24rem;
+        height: 32.625rem;
     }
 
-    .card-img-container {
-        max-width: 21rem;
-    }
 }
